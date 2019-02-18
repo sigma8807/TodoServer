@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 //var multer = require('multer'); // v1.0.5
 //var upload = multer(); // for parsing multipart/form-data
 var MongoClient = require('mongodb').MongoClient;
-require( './db' );
+require( './db' ); //呼叫db.js
 var mongoose = require( 'mongoose' );
 var Todo = mongoose.model( 'Todo' );
 
@@ -65,7 +65,7 @@ MongoClient.connect(url, (err, client) => {
     });
 
 
-    app.listen(3000, function () {
+    app.listen(4200, function () {
     console.log('Work');
     });
     
